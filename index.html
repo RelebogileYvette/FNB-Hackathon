@@ -87,20 +87,30 @@
 
     <!-- Header with Background Image -->
     <div class="header background-blur" style="background-image: url('https://via.placeholder.com/1200x300');">
+        <img class="img-fluid" src="img/bg.jpg" alt="">
         <h1>Welcome to Our Professional Networking Platform</h1>
     </div>
 
     <!-- Carousel for Slideshow -->
-    <div class="container mt-5">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img src="https://via.placeholder.com/1200x300" alt="Image 1">
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/1200x300" alt="Image 2">
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/1200x300" alt="Image 3">
+              <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -120,28 +130,21 @@
             <div class="col-md-6">
                
                 <h2>Sign Up</h2>
-<form method="post" action="/signup"> <!-- Make sure to set the form method and action appropriately -->
-    <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email Address:</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" class="form-control" id="password" name="password" required>
-    </div>
-    <div class="form-group">
-        <label for="role">Register as:</label>
-        <select id="role" name="role" class="form-control">
-            <option value="client">Client</option>
-            <option value="freelancer">Freelancer</option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Register</button>
-</form>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
             </div>
         </div>
     </div>
