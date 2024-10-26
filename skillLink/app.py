@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 from env_variable import username, password
 
@@ -167,9 +168,11 @@ def select_talent():
     
     selected_talent = {
         "talent_id": data['talent_id'],  # ID of the selected talent
+        "job_id": data['job_id'],         # ID of the job for which the talent is selected
         "selected_by": data['email'],     # Email of the talent seeker
         "reason": data.get('reason'),      # Reason for selection, if any
     }
 
     db.selected_talents.insert_one(selected_talent)
     return jsonify({"message": "Talent selected successfully"}), 201
+
