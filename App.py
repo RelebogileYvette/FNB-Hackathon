@@ -8,7 +8,7 @@ def home():
     return render_template('index.html')
 
 @app.route('/')
-def about():
+def booking():
     return render_template('booking.html')
 
 
