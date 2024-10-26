@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Employer Registration</title>
+    <title>Plumberz - Free Plumbing Website Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -47,7 +47,7 @@
         <div class="row align-items-center top-bar">
             <div class="col-lg-3 col-md-12 text-center text-lg-start">
                 <a href="" class="navbar-brand m-0 p-0">
-                    <h1 class="text-primary m-0">Vacancies</h1>
+                    <h1 class="text-primary m-0">Plumberz</h1>
                 </a>
             </div>
             <div class="col-lg-9 col-md-12 text-end">
@@ -88,9 +88,9 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu fade-up m-0">
-                            <a href="booking.html" class="dropdown-item active">Booking</a>
+                            <a href="booking.html" class="dropdown-item">Booking</a>
                             <a href="team.html" class="dropdown-item">Technicians</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
                             <a href="404.html" class="dropdown-item">404 Page</a>
                         </div>
                     </div>
@@ -99,6 +99,10 @@
                 <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
                         <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-1 text-white">Emergency 24/7</p>
+                        <h5 class="m-0 text-secondary">+012 345 6789</h5>
                     </div>
                 </div>
             </div>
@@ -110,11 +114,12 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 py-5">
         <div class="container">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Register</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Testimonial</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb text-uppercase">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
                 </ol>
             </nav>
         </div>
@@ -122,106 +127,78 @@
     <!-- Page Header End -->
 
 
-    <!-- Booking Start -->
-    <div class="container-fluid px-0" style="margin: 6rem 0;">
-        <div class="video wow fadeInUp" data-wow-delay="0.1s">
-            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                <span></span>
-            </button>
-
-            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content rounded-0">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- 16:9 aspect ratio -->
-                            <div class="ratio ratio-16x9">
-                                <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                    allow="autoplay"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-secondary text-uppercase">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say!</h1>
             </div>
-
-            <h1 class="text-white mb-4">Register your vancacies</h1>
-            <h3 class="text-white mb-0">24 Hours 7 Days a Week</h3>
-        </div>
-        <div class="container position-relative wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -6rem;">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="bg-light text-center p-5">
-                        <h1 class="mb-4">Register a vacancy</h1>
-                        <form>
-                            <div class="form-group">
-                            <label for="businessName">Business Name:</label>
-                            <input type="text" class="form-control" id="businessName" name="businessName" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="businessEmail">Business Email:</label>
-                            <input type="email" class="form-control" id="businessEmail" name="businessEmail" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="businessPhone">Business Phone:</label>
-                            <input type="tel" class="form-control" id="businessPhone" name="businessPhone" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="jobTitle">Job Title:</label>
-                            <input type="text" class="form-control" id="jobTitle" name="jobTitle" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="jobDescription">Job Description:</label>
-                            <textarea class="form-control" id="jobDescription" name="jobDescription" rows="4" required></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="jobLocation">Job Location:</label>
-                            <input type="text" class="form-control" id="jobLocation" name="jobLocation" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="experienceLevel">Experience Level:</label>
-                            <select id="experienceLevel" name="experienceLevel" class="form-control" required>
-                                <option value="">Select Experience Level</option>
-                                <option value="entry">Entry-Level (0-1 Years)</option>
-                                <option value="junior">Junior (1-3 Years)</option>
-                                <option value="mid">Mid-Level (3-5 Years)</option>
-                                <option value="senior">Senior (5-10 Years)</option>
-                                <option value="expert">Expert (10+ Years)</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="applicationDeadline">Application Deadline:</label>
-                            <input type="date" class="form-control" id="applicationDeadline" name="applicationDeadline" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="companyWebsite">Company Website (optional):</label>
-                            <input type="url" class="form-control" id="companyWebsite" name="companyWebsite">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="logoUpload">Upload Company Logo (optional):</label>
-                            <input type="file" class="form-control" id="logoUpload" name="logoUpload" accept=".jpg, .jpeg, .png">
-                            <small class="form-text text-muted">Accepted formats: JPG, JPEG, PNG</small>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100">Register Vacancy</button>
-                    </form>
+            <div class="owl-carousel testimonial-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">T"As a small business owner, finding motivated, talented graduates has always been a priority, and Coonect to Employer made it easy. We were able to connect with passionate young professionals looking to start their careers, and the process was seamless from start to finish. Giving new graduates a real start while meeting our staffing needs has been rewarding for our entire team!</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Client Name</h5>
+                    <p class="m-0">Profession</p>
                 </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Applying through Connect to Employer was an amazing experience! The process was so smooth, and I loved that they offer opportunities for graduates with no experience. It’s exciting to be able to gain hands-on knowledge in my field right out of school, and Coonect to Employer made it easy to connect with supportive employers who are eager to help me grow!</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Client Name</h5>
+                    <p class="m-0">Profession</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">As a small business owner, finding motivated, talented graduates has always been a priority, and Connect to Employer made it easy. We were able to connect with passionate young professionals looking to start their careers, and the process was seamless from start to finish. Giving new graduates a real start while meeting our staffing needs has been rewarding for our entire team!"</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Client Name</h5>
+                    <p class="m-0">Profession</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Client Name</h5>
+                    <p class="m-0">Profession</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Booking End -->
+    <!-- Testimonial End -->
         
 
     <!-- Footer Start -->
@@ -251,13 +228,13 @@
                     <h4 class="text-light mb-4">Services</h4>
                     <a class="btn btn-link" href="">Drain Cleaning</a>
                     <a class="btn btn-link" href="">Sewer Line</a>
-                    <a class="btn btn-link" href="">Software Developer</a>
-                    <a class="btn btn-link" href="">Personal Assistant</a>
+                    <a class="btn btn-link" href="">Water Heating</a>
+                    <a class="btn btn-link" href="">Toilet Cleaning</a>
                     <a class="btn btn-link" href="">Broken Pipe</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Read more about us.</p>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -269,7 +246,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Connect to Employer</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
                     </div>
                 </div>
             </div>
@@ -283,9 +260,6 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
