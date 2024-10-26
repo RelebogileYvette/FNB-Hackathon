@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Your Freelancer Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+            margin-top: 20px;
+        }
+        .header, .footer {
+            background-color: #017bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .form-section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h3 {
+            color: #017bff;
+        }
+        .btn-primary {
+            width: auto;
+            padding: 10px 30px;
+            font-size: 18px;
+            letter-spacing: 1px; /* Spacing between letters for better readability */
+            margin-top: 20px;
+        }
+        .form-control, .btn, .custom-file-label {
+            border-radius: 0.25rem;
+        }
+        .custom-file-label::after {
+            content: "Browse";
+        }
+        .inspiration-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #eef4ff;
+            border-left: 5px solid #017bff;
+            font-size: 16px;
+        }
+        .social-links input {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Create Your Freelancer Profile</h1>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Professional Details</h3>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" class="form-control" id="skills" placeholder="e.g., Web Development, Graphic Design">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <input type="number" class="form-control" id="experience" min="0" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="portfolio">Upload Portfolio (optional)</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="portfolio" multiple>
+                        <label class="custom-file-label" for="portfolio">Choose files</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="portfolioLink">Portfolio Website</label>
+                    <input type="url" class="form-control" id="portfolioLink" placeholder="http://yourportfolio.com">
+                </div>
+                <div class="form-group social-links">
+                    <label for="github">GitHub Profile URL</label>
+                    <input type="url" class="form-control" id="github" placeholder="https://github.com/username">
+                    <label for="linkedin">LinkedIn Profile URL</label>
+                    <input type="url" class="form-control" id="linkedin" placeholder="https://linkedin.com/in/username">
+                </div>
+            </div>
+
+            <div class="inspiration-section">
+                <h4>Why Join Us?</h4>
+                <p>See how other freelancers are thriving and display your work alongside the best in your field. Gain exposure, connect with clients, and grow your career with us!</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Profile</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Your Platform. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Handling file input display -->
+    <script>
+        // Improve file input interaction
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+</body>
+</html>
