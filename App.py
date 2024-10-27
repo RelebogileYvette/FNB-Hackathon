@@ -13,6 +13,16 @@ def home():
 @app.route('/signup', methods=['POST'])
 def signup():return redirect('/options')
 
+@app.route('/freelancer-signup')
+def freelancer_signup():
+    return render_template('freelancer/create_freelancer_profile.html')
+
+
+@app.route('/client-signup')
+def client_signup():
+    return render_template('client/create_client_profile.html')
+
+
 @app.route('/')
 def booking():
     return render_template('booking.html')
