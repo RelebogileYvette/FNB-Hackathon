@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose Your Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Lighter background for the whole page */
+        }
+        .container {
+            border-radius: 8px;
+            padding: 30px;
+            background-color: #ffffff; /* White background for the container */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow around the container */
+        }
+        .choice-box {
+            border: 2px solid transparent;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.3s;
+            cursor: pointer;
+            background-color: #e3f2fd; /* Light blue background for choice boxes */
+        }
+        .choice-box:hover, .choice-box.active {
+            border-color: #1e88e5; /* Darker blue border on hover/active */
+            background-color: #bbdefb; /* Slightly darker blue background on hover/active */
+        }
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #0d6efd; /* Matching blue color for icons */
+        }
+        .join-btn {
+            display: none;
+            margin-top: 20px;
+            background-color: #0d6efd; /* Bootstrap primary blue for button */
+            color: white; /* White text for better readability */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .join-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Are you a Freelancer or a Client?</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="choice-box" id="freelancerBox">
+                    <i class="fas fa-laptop-code icon"></i>
+                    <h3>Freelancer</h3>
+                    <input type="radio" name="role" id="freelancerRadio">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="choice-box" id="clientBox">
+                    <i class="fas fa-briefcase icon"></i>
+                    <h3>Client</h3>
+                    <input type="radio" name="role" id="clientRadio">
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary join-btn" id="joinButton">Join</button>
+        </div>
+    </div>
+
+    <script>
+        const freelancerBox = document.getElementById('freelancerBox');
+        const clientBox = document.getElementById('clientBox');
+        const joinButton = document.getElementById('joinButton');
+
+        freelancerBox.addEventListener('click', function() {
+            clientBox.classList.remove('active');
+            freelancerBox.classList.add('active');
+            joinButton.style.display = 'block';
+            joinButton.textContent = 'Join as Freelancer';
+            joinButton.onclick = function() {
+                window.location.href = '/freelancer-signup'; // Change URL to your freelancer signup page
+            };
+        });
+
+        clientBox.addEventListener('click', function() {
+            freelancerBox.classList.remove('active');
+            clientBox.classList.add('active');
+            joinButton.style.display = 'block';
+            joinButton.textContent = 'Join as Client';
+            joinButton.onclick = function() {
+                window.location.href = '/client-signup'; // Change URL to your client signup page
+            };
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

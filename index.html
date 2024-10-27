@@ -2,173 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Welcome to SkillLink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Networking Platform</title>
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-    <!-- Owl Carousel -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scrollbar */
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #f9f9f9; /* Light grey background */
+            padding-top: 20px;
         }
-        .header, .footer {
-            background-color: #003366;
+        .header {
+            background-color: #007bff;
             color: white;
-            padding: 10px 20px;
+            padding: 30px;
             text-align: center;
+            border-bottom: 10px solid #0056b3;
         }
-        .navbar {
-            background-color: #fff;
-        }
-        .btn-primary {
-            background-color: #0055b7;
-            border-color: #0055b7;
-        }
-        .btn-primary:hover {
-            background-color: #003366;
-            border-color: #003366;
-        }
-        .background-blur {
-            filter: blur(8px);
-            -webkit-filter: blur(8px);
-            height: 300px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .onboarding {
-            background-color: #f2f2f2;
-            border-left: 5px solid #0055b7;
-            padding: 20px;
+        .caption {
+            font-size: 1.2em;
             margin-top: 20px;
+            margin-bottom: 40px;
+            font-style: italic;
+            background-color: #ffffff;
+            border-left: 5px solid #0056b3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .carousel-item img {
-            height: 300px;
-            object-fit: cover;
+        .get-started-btn {
+            background-color: #28a745;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .get-started-btn:hover {
+            background-color: #218838;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        .service-block {
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .service-block:hover {
+            transform: scale(1.05);
+            background-color: #f4f4f4;
+        }
+        .freelancer-profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #007bff;
+        }
+        .freelancer-details {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .how-to-hire section {
+            background: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 10px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .how-to-hire h4 {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#">Networking Platform</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to SkillLink!</h1>
         </div>
-    </nav>
-
-    <!-- Header with Background Image -->
-    <div class="header background-blur" style="background-image: url('https://via.placeholder.com/1200x300');">
-        <img class="img-fluid" src="img/bg.jpg" alt="">
-        <h1>Welcome to Our Professional Networking Platform</h1>
-    </div>
-
-    <!-- Carousel for Slideshow -->
-    <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                        </div>
-                    </div>
-                </div>
-            </div>
-              <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p class="caption">"SkillLink, Connect with highly skilled Graduates, looking for experience, opportunities, and projects that help them freelance effectively."</p>
+        <div class="text-center mb-4">
+            <button class="get-started-btn">Get Started</button>
         </div>
-    </div>
 
-    <div class="container mt-5">
-        <!-- Onboarding Section -->
+        <div class="row mb-3">
+            <h3 class="mb-3">Client Rate Total</h3>
+            <p>Since the platform launched, clients have rated services a total of 9.8/10!</p>
+        </div>
+
         <div class="row">
-            <div class="col-md-6">
-                <div class="onboarding">
-                    <h3>Quick Tips:</h3>
-                    <ul>
-                        <li>Complete your profile to increase visibility.</li>
-                        <li>Use a strong password to keep your account secure.</li>
-                    </ul>
+            <h3 class="mb-3">Services</h3>
+            <div class="col-md-3 service-block">Web Development</div>
+            <div class="col-md-3 service-block">Mobile App Development</div>
+            <div class="col-md-3 service-block">Graphic Design</div>
+            <div class="col-md-3 service-block">Digital Marketing</div>
+        </div>
+
+        <div class="row mt-4 mb-4">
+            <h3 class="mb-3">Work with Anyone</h3>
+            <div class="col-md-6 freelancer-profile">
+                <img src="profile1.jpg" alt="Freelancer 1">
+                <div class="freelancer-details">
+                    <h5>John Doe</h5>
+                    <p>Web Developer</p>
+                    <p>$20/hr · ★★★★★</p>
                 </div>
             </div>
-            <div class="col-md-6">
-               
-                <h2>Sign Up</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address:</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" class="form-control" id="password" name="password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
-                </form>
+            <div class="col-md-6 freelancer-profile">
+                <img src="profile2.jpg" alt="Freelancer 2">
+                <div class="freelancer-details">
+                    <h5>Jane Smith</h5>
+                    <p>Graphic Designer</p>
+                    <p>$25/hr · ★★★★☆</p>
+                </div>
+            </div>
+            <div class="col-md-6 freelancer-profile">
+                <img src="profile3.jpg" alt="Freelancer 3">
+                <div class="freelancer-details">
+                    <h5>Alice Johnson</h5>
+                    <p>Mobile Developer</p>
+                    <p>$30/hr · ★★★★★</p>
+                </div>
+            </div>
+            <div class="col-md-6 freelancer-profile">
+                <img src="profile4.jpg" alt="Freelancer 4">
+                <div class="freelancer-details">
+                    <h5>Mike Brown</h5>
+                    <p>Digital Marketer</p>
+                    <p>$22/hr · ★★★★☆</p>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-3">
+                <button class="btn btn-outline-primary">See More Profiles</button>
             </div>
         </div>
+
+        <section class="how-to-hire">
+            <h4>How to Hire</h4>
+            <ol>
+                <li>Create a job post, detailing the requirements and specifications of your project.</li>
+                <li>Get proposals from freelancers, who will build a sample of your project for you to review. You can choose the style you like the most, or select a freelancer directly to create a booking with them.</li>
+                <li>An agile plan can be created for you, or you can upload your own plan. The plan will be accessible to the freelancer you approve. It will also go through a review process, and you can use the platform to attend online meetings for code progress reviews or other discussions based on the proposed plan.</li>
+            </ol>
+            <p>Payment: You'll only pay the freelancer you authorize.</p>
+        </section>
     </div>
 
-    <div class="footer">
-        <p>Footer Information &copy; 2024</p>
-    </div>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                nav: true,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 3000
-            });
-        });
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
