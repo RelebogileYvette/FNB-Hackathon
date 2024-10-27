@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Freelancer Listings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .freelancer-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .freelancer-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .btn-primary, .dropdown-item {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover, .dropdown-item:hover {
+            color: #fff;
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .filter-dropdown {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Freelancer Listings</h2>
+        <!-- Filter Dropdown -->
+        <div class="dropdown filter-dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="filterMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter Freelancers
+            </button>
+            <div class="dropdown-menu" aria-labelledby="filterMenuButton">
+                <a class="dropdown-item" href="#">All</a>
+                <a class="dropdown-item" href="#">Highly Ranked</a>
+                <a class="dropdown-item" href="#">New Freelancers</a>
+            </div>
+        </div>
+        <!-- Example of a freelancer card -->
+        <div class="freelancer-card">
+            <h4>Jane Doe</h4>
+            <p>Graphic Designer with 5 years of experience in digital and print media.</p>
+            <a href="profile-janedoe.html" class="btn btn-primary">More</a>
+        </div>
+        <div class="freelancer-card">
+            <h4>John Smith</h4>
+            <p>Full-stack Developer specializing in JavaScript and Python.</p>
+            <a href="profile-johnsmith.html" class="btn btn-primary">More</a>
+        </div>
+        <div class="freelancer-card">
+            <h4>Emily White</h4>
+            <p>Digital Marketing Expert with a focus on SEO and Social Media Strategies.</p>
+            <a href="profile-emilywhite.html" class="btn btn-primary">More</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
