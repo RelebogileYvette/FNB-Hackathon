@@ -270,3 +270,100 @@ header {
 .skill {
   padding-bottom: 3rem;
 }
+
+footer {
+  background-color: #1f4a40;
+  color: white;
+  padding: 4rem 0;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top .logo {
+  width: 270px;
+  height: 110px;
+  margin-bottom: 1rem;
+}
+
+.top i {
+  color: white;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.bottom {
+  padding-top: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom a {
+  text-decoration: none;
+  line-height: 35px;
+  font-size: 1.1rem;
+  color: #fafafa;
+}
+
+.jobs form {
+  margin-top: 3rem;
+  width: 100%;
+  border: 1px solid #51a995;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobs form i {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.jobs form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem .5rem;
+  font-size: 1.1rem;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fcfa;
+  border: 1px solid;
+  border-radius: 38px;
+  padding: 2rem;
+}
+
+.job-img-row {
+  display: flex;
+  align-items: center;
+}
+
+.job-header img {
+  width: 100px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-right: 2rem;
+}
+
+.job-description p {
+  padding-bottom: 2rem;
+}
